@@ -1,0 +1,89 @@
+/* 
+==========
+SWITCH
+==========
+*/
+
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin: 100px;
+}
+
+input{
+    display: none;
+}
+
+.switch .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: lightcoral;
+    border-radius: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.slider::before{
+    position:absolute;
+    content:"😌";
+    font-size: 23px;
+    width: 32px;
+    height: 32px;
+    margin: 3px;
+    border-radius:50%;
+    background: white;
+    transition: 0.5s;
+}
+
+input:checked + .slider{
+    background: lightgreen;
+}
+
+input:checked + .slider::before{
+    background: green;
+    content:"😃";
+    transform: translateX(60px);
+}
+
+
+
+
+
+/* 
+==========
+TABS
+==========
+*/
+
+/*
+div{
+    margin: 50px;
+    font-size: 30px;
+    width: 800px;
+    height: 400px;
+    background: lightcoral;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+div label{
+    cursor: pointer;
+}
+
+div p{
+    display: none;
+}
+
+#uno:checked ~ article > #uno-p,
+#dos:checked ~ article > #dos-p,
+#tres:checked ~ article > #tres-p{
+    display:block;
+} */
